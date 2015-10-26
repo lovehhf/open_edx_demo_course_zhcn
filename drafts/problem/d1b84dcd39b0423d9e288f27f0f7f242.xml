@@ -1,0 +1,14 @@
+<problem display_name="Few Checks" markdown="null" max_attempts="3" rerandomize="never" showanswer="never" weight="null">
+  <text>
+    <p>这个例子的问题具有较少的检查，这样你就可以观察系统的行为，当您用完检查.</p>
+    <p>哪些常见的果实圆形，有柄，长在树上，并附带在红色和绿色的品种？</p>
+    <multiplechoiceresponse>
+      <choicegroup type="MultipleChoice">
+        <choice correct="true">苹果</choice>
+        <choice correct="false">香蕉</choice>
+        <choice correct="false">橘子</choice>
+        <choice correct="false">南瓜</choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </text>
+</problem>

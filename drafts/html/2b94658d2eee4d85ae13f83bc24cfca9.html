@@ -1,0 +1,76 @@
+<h2>分子编辑器</h2>
+<h2></h2>
+<h2>很多学生喜欢分子建设者。它使创建和可视化的分子比较容易。化学教授可能必须建立并提交一个分子作为工作的一部分。</h2>
+<div>
+<script>// <![CDATA[
+function toggle2(showHideDiv, switchTextDiv) {
+            var ele = document.getElementById(showHideDiv);
+            var text = document.getElementById(switchTextDiv);
+            if(ele.style.display == "block") {
+                ele.style.display = "none";
+                text.innerHTML = "+ open";
+                }
+            else {
+                ele.style.display = "block";
+                text.innerHTML = "- close";
+            }
+        }
+// ]]></script>
+</div>
+<style type="text/css"><!--
+#headerDiv, #contentDiv {
+        width: 600px;
+        }
+
+
+            #titleText {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 5px;
+            }
+            #myHeader {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 5px;
+            }
+            #IntroductionHeader { 
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 5px;
+            }
+            #headerDiv {
+            background-color: #F4F4F4;
+            }
+            #contentDiv {
+            background-color: #F4F4F4;
+            }
+            #myContent {
+            margin: 5px 10px 5px 5px;
+            }
+            #IntroductionContent {
+            margin: 5px 10px 5px 5px;
+            }
+            #headerDiv a {
+            float: right;
+            margin: 5px 5px 5px 5px;
+            }
+            #headerDiv a:hover {
+            color: #FFFFFF;
+            }
+--></style>
+<div id="headerDiv">
+<div id="titleText">
+<div id="titleText"><span style="font-size: 17.6px; line-height: 28.16px;">利用分子编辑器+开放</span></div>
+<div id="titleText"><span style="font-size: 17.6px; line-height: 28.16px;">&nbsp;</span></div>
+<div id="titleText"><span style="font-size: 17.6px; line-height: 28.16px;">&nbsp;</span></div>
+<div id="titleText"><span style="font-size: 17.6px; line-height: 28.16px;">是我画的化学尽可能分子？+开放</span></div>
+</div>
+</div>
+<div id="contentDiv">
+<div id="IntroductionContent" style="display: none;">
+<p>The chemical editor you are using ensures that the structures you draw are correct in one very narrow sense, that they follow the rules for covalent bond formation and formal charge. However, there are many structures that follow these rules that are chemically impossible, unstable, do not exist in living systems, or are beyond the scope of this course. The editor will let you draw them because, in contrast to the rules of formal charge, these properties cannot be easily and reliably predicted from structures.</p>
+<p>If you submit a structure that includes atoms that are not possible or are beyond the scope of this course, the software will warn you specifically about these parts of your structure and you will be allowed to edit your structure and re-submit. Submitting an improper structure will not count as one of your tries. In general, you should try to use only the atoms most commonly cited in this course: C, H, N, O, P, and S. If you want to learn about formal charge, you can play around with other atoms and unusual configurations and look at the structures that result.</p>
+<p>The JME molecular editor is provided courtesy of Peter Ertl and Novartis; the licence can be found <a href="/static/data/license.txt">here.</a></p>
+</div>
+</div>
+<div id="ap_listener_added">&nbsp;</div>

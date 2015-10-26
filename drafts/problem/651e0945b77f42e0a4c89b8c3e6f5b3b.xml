@@ -1,0 +1,17 @@
+<problem display_name="不止一次回答" markdown="有时，你可能会提出一个正确的答案，并继续与可能的答案试验。 太棒了！探索所有可能的正确答案是学习一种非常有效的方法。但是，你要记得留下你的最后的答案与旁边有一个绿色的对勾。该EDX系统将只算你最近的回答对你的最终成绩，因此，如果您额外的实验留下你的答案不正确的状态，那么您将无法获得信贷的问题。&#10;&#10;输入π的值:&#10;= 3.14159 +- .02&#10;&#10;[explanation] π，或将其直径的圆的周长之比，是众所周知的极高的精度无理数。它是值约等于3.14。 [explanation] " max_attempts="null" rerandomize="never" showanswer="always" weight="null">
+<p>有时，你可能会提出一个正确的答案，并继续与可能的答案试验。 太棒了！探索所有可能的正确答案是学习一种非常有效的方法。但是，你要记得留下你的最后的答案与旁边有一个绿色的对勾。该EDX系统将只算你最近的回答对你的最终成绩，因此，如果您额外的实验留下你的答案不正确的状态，那么您将无法获得信贷的问题。</p>
+
+<p>输入π的值:</p>
+<numericalresponse answer="3.14159">
+  <responseparam type="tolerance" default=".02"/>
+  <formulaequationinput/>
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+<p>Explanation</p>
+
+<p> π，或将其直径的圆的周长之比，是众所周知的极高的精度无理数。它是值约等于3.14。 </p>
+</div>
+</solution> 
+</problem>

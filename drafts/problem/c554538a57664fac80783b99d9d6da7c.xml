@@ -1,0 +1,15 @@
+<problem display_name="指向一幅图片" markdown="null" max_attempts="null" rerandomize="never" showanswer="always" weight="null">
+  <p>
+当然，有些问题可能会显示您的图片，并要求你点击它来回答的问题。试试这个例子。 （如果你是正确的，你会看到我们著名的绿色复选标记。）
+</p>
+  <p>哪一种动物是一只小猫?</p>
+  <imageresponse>
+    <imageinput src="/static/Dog-and-Cat.jpg" width="640" height="400" rectangle="(385,98)-(600,337)"/>
+  </imageresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>解释</p>
+      <p>家猫,小猫<i>Felis silvestris catus</i>)这张照片是正确的。</p>
+    </div>
+  </solution>
+</problem>

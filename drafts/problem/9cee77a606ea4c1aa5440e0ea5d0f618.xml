@@ -1,0 +1,19 @@
+<problem parent_sequential_url="i4x://edX/DemoX/sequential/workflow" index_in_children_list="5" display_name="互动问题" markdown="null" max_attempts="null" rerandomize="never" showanswer="always" weight="null">
+    <p>大多数课程有一个测试你的知识，如下面的互动问题。他们可以是一个学习序列或考试的一部分。注意视觉反馈。来吧，试试吧！</p>
+    <p>问题这是作业或考试的一部分，可能有到期日 - 你可以提交等级分配最后的时间。一旦这个时候已经过去了，你就无法获得信贷的分配任何不完整的问题。</p>
+    <p>如果分配有一个截止日期，你可以看到在到期日在侧面的手风琴。 （本演示过程中没有任何到期日。）如果显示没有截止日期，该分配可以随时转身。</p>
+    <p>到期日所有任务都列在UTC（国际时间标准）。请<a href="http://www.timeanddate.com/worldclock/">查找您的时区</a>以了解根据您的时钟什么时候你的任务到期。 EDX不能提供任何扩展。</p>
+  <h1/>
+    <p>open edX允许何种的政策文件?</p>
+    <choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice correct="false">逾期</choice>
+        <choice correct="false">老师原谅</choice>
+        <choice correct="false">迟到时间预算</choice>
+        <choice correct="true">以上都不是</choice>
+      </checkboxgroup>
+  </choiceresponse>
+  <solution>
+   open edX不接受任何情况下，任何迟交作业，所以答案是“以上都不是”。
+  </solution>
+</problem>

@@ -1,0 +1,29 @@
+<problem attempts="10" display_name="Designing Proteins in Two Dimensions" graceperiod="" markdown="null" max_attempts="null" rerandomize="never" showanswer="always" start="&quot;2013-02-05T00:00:00+00:00&quot;" weight="null" xqa_key="qaijS3UatK020Wc0sfCtFe0V6jpB4d64">
+  <script type="loncapa/python">
+
+def two_d_grader(expect,ans):
+  import json
+  ans=json.loads(ans)
+  if "ERROR" in ans["protex_answer"]:
+    raise ValueError("Protex did not understand your answer... try folding the protein")
+  return ans["protex_answer"]=="CORRECT"
+
+
+</script>
+  <text>
+    <customresponse cfn="two_d_grader">
+      <designprotein2dinput width="855" height="500" target_shape="W;W;W;W;W;W;W"/>
+    </customresponse>
+  </text>
+  <p>Be sure to click "Fold" to fold your protein before you click "Check".</p>
+  <solution>
+    <p>
+有许多蛋白质序列，将折向我们问你的形状。下面是一个示例程序，将工作。你可以玩它，如果你是好奇。
+        </p>
+    <ul>
+      <li>
+                Stick: RRRRRRR
+            </li>
+    </ul>
+  </solution>
+</problem>

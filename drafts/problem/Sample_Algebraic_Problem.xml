@@ -1,0 +1,17 @@
+<problem display_name="数学表达式" graceperiod="18000 seconds" markdown="null" rerandomize="never" showanswer="attempted" start="&quot;2013-02-05T00:00:00+00:00&quot;" xqa_key="qaijS3UatK020Wc0sfCtFe0V6jpB4d64">
+  <script type="loncapa/python">
+z = "A*x^2 + sqrt(y)"
+</script>
+  <startouttext/>
+  <p>一些edX课程要求你输入一个代数表达式作为一个答案。试着进入下面的盒子下面的代数表达式。这比看上去容易多了。</p>
+  <p> \(A \cdot x^2 + \sqrt{y}\)  
+    </p>
+  <p>
+入口是区分大小写的。产品必须与星号表示,和乘方脱字符号,所以你会写
+"A*x^2 + sqrt(y)".</p>
+  <endouttext/>
+  <formularesponse type="cs" samples="A,x,y@1,1,1:3,3,3#10" answer="$z">
+    <responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+    <textline size="40" math="1"/>
+  </formularesponse>
+</problem>

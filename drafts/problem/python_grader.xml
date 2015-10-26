@@ -1,0 +1,148 @@
+<problem title="Embedded Code Box" display_name="" graceperiod="18000 seconds" markdown="null" rerandomize="never" showanswer="always" start="&quot;2013-02-05T00:00:00+00:00&quot;" xqa_key="qaijS3UatK020Wc0sfCtFe0V6jpB4d64">
+  <text>
+    <p> 我们正在寻找最小的月度付款,这样我们可以偿还贷款的整个平衡在一年之内。</p>
+    <p> 以下值可能是有用的在编写您的解决方案</p>
+    <blockquote>
+      <p><strong>每月的利率</strong>
+= (年利率) / 12<br/>
+<strong>每月支付下界</strong>
+= 余额 / 12<br/>
+
+<strong>每月支付上限</strong> = (Balance x
+        (1 + Monthly interest rate)<sup>12</sup>) / 12
+</p>
+    </blockquote>
+    <p>下列变量包含值如下所述:</p>
+    <ol>
+      <li>
+        <p><code>balance</code> - the outstanding balance on the credit card</p>
+      </li>
+      <li>
+        <p><code>annualInterestRate</code> - annual interest rate as a decimal</p>
+      </li>
+    </ol>
+    <p>编写一个程序,使用这些界限和二分搜索 (for more info check out <a href="http://en.wikipedia.org/wiki/Bisection_method" target="_blank">the Wikipedia page
+        on bisection search</a>)
+        to find the smallest monthly payment <em>to the cent</em>
+        such that we can pay off the
+        debt within a year.</p>
+    <p>注意,如果您不使用二分搜索的时候,您的代码将不会运行,代码只有30秒到我们的服务器上运行。如果你得到一个消息,国家”提交无法评分。请重新检查你的提交和再试一次。如果问题仍然存在,请通知员工。”,检查以确保您的代码不需要太长时间。</p>
+    <p>The code you paste into the following box should not specify the values for the variables <code>balance</code> 
+      or <code>annualInterestRate</code> - 我们的测试代码将定义这些值在测试之前提交。 </p>
+  </text>
+  <coderesponse>
+    <textbox rows="10" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+monthlyInterestRate = annualInterestRate/12
+lowerBound = balance/12
+upperBound = (balance * (1+annualInterestRate/12)**12)/12
+originalBalance = balance
+
+# Keep testing new payment values 
+#  until the balance is +/- $0.02
+while abs(balance) &gt; .02:
+    # Reset the value of balance to its original value
+    balance = originalBalance
+    # Calculate a new monthly payment value from the bounds
+    payment = (upperBound - lowerBound)/2 + lowerBound
+
+    # Test if this payment value is sufficient to pay off the 
+    #  entire balance in 12 months
+    for month in range(12):
+        balance -= payment
+        balance *= 1+monthlyInterestRate
+
+    # Reset bounds based on the final value of balance
+    if balance &gt; 0: 
+        # If the balance is too big, need higher payment
+    #  so we increase the lower bound
+        lowerBound = payment
+    else:
+        # If the balance is too small, we need a lower
+    #  payment, so we decrease the upper bound
+        upperBound = payment
+
+# When the while loop terminates, we know we have 
+#  our answer!
+print "Lowest Payment:", round(payment, 2)
+</answer_display>
+      <grader_payload>
+{"grader": "ps02/bisect/grade_bisect.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <text>
+    <div>
+      <b>Note:</b>
+      <p>根据频率,你在这功能,你的答案可能几美分。试着舍入尽可能几次为了增加结果的准确性。</p>
+    </div>
+    <section class="hints">
+      <h3>Hints</h3>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht3l">测试用例来测试您的代码。一定要测试这些在您自己的机器上,你会得到相同的输出!——在这个网页上运行您的代码!! </a>
+        </header>
+        <section id="ht3">
+          <p><b>Note:</b>自动化测试是仁慈的,如果你的答案是由几美分的方向,你的代码就可以了. </p>
+          <p>Test Cases:</p>
+          <ol>
+            <li>
+              <p>
+                <pre>
+                  <code>
+          Test Case 1:
+          balance = 320000
+          annualInterestRate = 0.2
+
+          Result Your Code Should Generate:
+          -------------------
+          Lowest Payment: 29157.09
+      </code>
+                </pre>
+              </p>
+            </li>
+            <li>
+              <p>
+                <pre>
+                  <code>
+          Test Case 2:
+          balance = 999999
+          annualInterestRate = 0.18
+          
+          Result Your Code Should Generate:
+          -------------------
+          Lowest Payment: 90325.07
+      </code>
+                </pre>
+              </p>
+            </li>
+          </ol>
+        </section>
+      </div>
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht4">The autograder says, "Your submission could not be graded." Help!</a>
+        </header>
+        <section id="ht4">
+          <p> If the autograder gives you the following message:</p>
+          <pre>
+Your submission could not be graded.
+Please recheck your submission and try again. If the problem persists, please notify the course staff.
+      </pre>
+          <p>Don't panic! There are a few things that might be wrong with your code that you should 
+        check out. The number one reason this message appears is because your code timed out.
+        You only get 30 seconds of computation time on our servers. If your code times out,
+        you probably have an infinite loop. What to do?</p>
+          <p>The number 1 thing to do is that you need to run this code in your own local 
+        environment. Your code should print one line at the end of the loop. If your code never prints anything
+        out - you have an infinite loop!</p>
+          <p>调试你的无限循环,检查你的循环条件。什么时候停止?尝试插入打印语句内循环输出信息(如变量)——是你递增或递减循环计数器正确吗?在论坛搜索类似问题的人。如果你搜索什么都不出现,做一个新职位和粘贴在你的循环条件对其他人来帮助你。</p>
+          <p>请不要邮件的员工,除非代码合法工作,在当地环境中打印出正确的答案。在这种情况下,请电邮您的代码文件,截图打印出正确答案的代码在你当地的环境中,和截图一样的代码不工作的导师。员工是否则无法帮助调试你的问题通过电子邮件——我们只能解决平台问题</p>
+        </section>
+      </div>
+    </section>
+    <br/>
+  </text>
+</problem>

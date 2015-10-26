@@ -1,0 +1,6 @@
+<vertical display_name="电气电路模拟器" parent_url="block-v1:edx+DemoX+Demo_Course+type@sequential+block@graded_simulations" index_in_children_list="3">
+  <html url_name="d5a5caaf35e84ebc9a747038465dcfb4"/>
+  <problem url_name="free_form_simulation"/>
+  <problem url_name="logic_gate_problem"/>
+  <discussion url_name="4f06b358a96f4d1dae57d6d81acd06f2"/>
+</vertical>

@@ -1,0 +1,12 @@
+<problem attempts="100" display_name="限制检查" markdown="null" max_attempts="100" rerandomize="never" showanswer="never">
+  <text>
+    <p>通常情况下，你将有时间，你可以检查你的答案数量有限。在这里，你可以用100的尝试练习。</p>
+    <p>当有数量有限的检查，可在一个问题，一个蓝色的“保存”按钮，会出现，以及柜台上使用的和可用的提交数量。如果您想输入答案并保存在系统中，直到你回来了同样的问题，使用“保存”按钮。这不会提交您的答案，或使用任何您提交的问题。相反，节省了一个答案只会让你保存的答案，目前它回给你当你在看这个问题了。请注意：为了得到您的回答了一个档次，你必须点击“检查”到你的答案提交给平地机。与往常一样，只有你的最后一次检查的答案计数为你的成绩。</p>
+    <p>尝试输入答案并保存而不检查。现在按检查，看看你的答案是。您也可以通过给一个错误的答案故意来查看系统的行为实验。</p>
+    <p>在大多数的汽车，有多少车轮接触路面的路面？</p>
+    <numericalresponse answer="4">
+      <responseparam type="tolerance" default="0.0001%" name="tol" description="Numerical Tolerance"/>
+      <textline/>
+    </numericalresponse>
+  </text>
+</problem>

@@ -1,0 +1,12 @@
+<problem display_name="归结" markdown="两种不同的解释提供了一个事实，即密钥不会打开任何车门。哪一个是正确的？&#10;&#10;( ) 关键是太小了。&#10;( ) 该锁太大了。&#10;(x) 都不是 - 因为没有参考任何“正确”框架，唯一真实的陈述可以说，没有锁到关键的比赛。&#10;" rerandomize="never" showanswer="finished">
+<p>两种不同的解释提供了一个事实，即密钥不会打开任何车门。哪一个是正确的？</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">关键是太小了。</choice>
+    <choice correct="false">该锁太大了。</choice>
+    <choice correct="true">都不是 - 因为没有参考任何“正确”框架，唯一真实的陈述可以说，没有锁到关键的比赛。</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>

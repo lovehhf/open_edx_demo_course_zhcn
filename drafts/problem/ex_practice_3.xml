@@ -1,0 +1,18 @@
+<problem display_name="随机问题" markdown="null" rerandomize="always" showanswer="never">
+  <text>
+    <p>有些问题的变化取决于何时，你怎么看待他们，因为他们使用的是随机元素上。对于这些问题，你就可以重新设置你回答之后的问题，这将重建问题一组新的参数。
+    </p>
+    <p>
+当你回答这个问题，并提交了分级，你不会总是能得到相同的问题。如果你想保持你的问题一样，没有'检查'你的答案，只是'救'了。</p>
+    <script type="loncapa/python">
+x1 = random.randint(0, 100)
+x2 = random.randint(0, 100)
+y = x1+x2
+</script>
+    <p> \($x1+$x2\) 的值是多少? </p>
+    <numericalresponse answer="$y">
+      <responseparam type="tolerance" default="0.0001%" name="tol" description="Numerical Tolerance"/>
+      <textline/>
+    </numericalresponse>
+  </text>
+</problem>

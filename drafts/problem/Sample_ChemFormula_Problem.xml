@@ -1,0 +1,20 @@
+<problem display_name="Chemical Equations" markdown="null" rerandomize="never" showanswer="never">
+  <startouttext/>
+  <p>一些问题可能要求特定的化学方程式。你可以练习这种方法通过写出下列反应在下面的框中。</p>
+  <center>\( \text{H}_2\text{SO}_4 \longrightarrow \text{ H}^+ + \text{ HSO}_4^-\)</center>
+  <br/>
+  <customresponse>
+    <chemicalequationinput size="50"/>
+    <answer type="loncapa/python">
+
+if chemcalc.chemical_equations_equal(submission[0], 'H2SO4 -&gt; H^+ + HSO4^-'): 
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+</answer>
+  </customresponse>
+  <p> 一些建议:<ul><li>唯一真正的元素符号是允许的</li><li>下标与纯文本输入。</li><li>标与插入符号表示(^).</li><li>反应的箭头(\(\longrightarrow\)) 表示为"-&gt;".</li></ul>
+	 所以你可以输入 "H2SO4 -&gt; H^+ + HSO4^-".</p>
+  <endouttext/>
+</problem>

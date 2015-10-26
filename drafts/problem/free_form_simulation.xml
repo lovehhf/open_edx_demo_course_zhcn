@@ -1,0 +1,14 @@
+<problem display_name="" graceperiod="18000 seconds" markdown="null" rerandomize="never" showanswer="never" start="&quot;2013-02-05T00:00:00+00:00&quot;" xqa_key="qaijS3UatK020Wc0sfCtFe0V6jpB4d64">
+  <startouttext/>
+  <p>这里有一个沙盒，你可以与各种电子元件的试验。如果您在CHECK点击下面，你的图将被保存在网站上，你可以在一段时间后返回。</p>
+  <endouttext/>
+  <schematicresponse>
+    <p/>
+    <center>
+      <schematic name="work" value="" width="640" height="800"/>
+    </center>
+    <answer type="loncapa/python">
+correct = ['correct']
+</answer>
+  </schematicresponse>
+</problem>

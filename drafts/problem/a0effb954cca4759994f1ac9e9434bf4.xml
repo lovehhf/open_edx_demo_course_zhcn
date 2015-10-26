@@ -1,0 +1,32 @@
+<problem display_name="单选问题" markdown="许多edX课程作业或练习你需要完成。注意到左边的时钟图像吗?这意味着需要完成这个作业或练习对你通过课程。(这可能会让你感到困惑,锻炼可能有也可能没有到期日期结束之前的课程)。&#10;&#10;&#10;我们提供八(8)教授如何问你问题的例子。尽管多项选择问题类型下面是有些标准,探索其他类型的问题在上面的序列中,与公式编辑器——尝试。&#10;&#10;&#10;当你经历的问题类型,注意edX立即给你反馈你的反应——它真的有助于学习过程。&#10;&#10;&#10;大海是什么颜色在一个阳光明媚的一天?&#10;&#10;[[黄, (蓝), 绿]]&#10;&#10;&#10;下面家具是是用来坐的 ?&#10;&#10;( ) 表&#10;( ) 桌子&#10;(x) 椅子&#10;( ) 书架&#10;&#10;下面哪个乐器?&#10;&#10;[x] 钢琴&#10;[ ] 书&#10;[x] 吉他&#10;[ ] 窗户&#10;&#10;&#10; " max_attempts="null" rerandomize="never" showanswer="never" weight="null">
+<p>许多edX课程作业或练习你需要完成。注意到左边的时钟图像吗?这意味着需要完成这个作业或练习对你通过课程。(这可能会让你感到困惑,锻炼可能有也可能没有到期日期结束之前的课程)。</p>
+<p>我们提供八(8)教授如何问你问题的例子。尽管多项选择问题类型下面是有些标准,探索其他类型的问题在上面的序列中,与公式编辑器——尝试。</p>
+<p>当你经历的问题类型,注意edX立即给你反馈你的反应——它真的有助于学习过程。</p>
+<p>大海是什么颜色在一个阳光明媚的一天?</p>
+<optionresponse>
+  <optioninput options="('黄','蓝','绿')" correct="蓝"/>
+</optionresponse>
+
+
+<p>下面家具是是用来坐的 ?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">表</choice>
+    <choice correct="false">桌子</choice>
+    <choice correct="true">椅子</choice>
+    <choice correct="false">书架</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>下面哪个乐器?</p>
+<choiceresponse>
+  <checkboxgroup direction="vertical">
+    <choice correct="true">钢琴</choice>
+    <choice correct="false">书</choice>
+    <choice correct="true">吉他</choice>
+    <choice correct="false">窗户</choice>
+  </checkboxgroup>
+</choiceresponse>
+
+<p> </p>
+</problem>

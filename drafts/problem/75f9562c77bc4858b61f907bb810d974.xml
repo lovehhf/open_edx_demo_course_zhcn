@@ -1,0 +1,32 @@
+<problem display_name="数值输入" markdown="一些课程的问题要求你将数据插入web-text字段,和你的答案可以判断准确或近似问题。&#10;&#10;注意edX系统使用一段来表示小数,所以15三个季度&quot;15.75&quot;, 不是 &quot;15,75&quot;. &#10;&#10;输入的Pi数值:&#10;= 3.14159 +- .02&#10;&#10;输入502 * 9的近似值:&#10;= 4518 +- 15%&#10;&#10;输入的指甲健康的人手。为了这个问题,请考虑拇指手指:&#10;= 5&#10;&#10;[explanation] π,或者是一个圆的周长直径之间的比率,是一个无理数已知极端的精度。它是值约等于3.14。&#10;尽管你可以得到一个精确值通过输入502 * 9成一个计算器,结果将是近500 * 10,或5000年。年级接受任何响应在真实价值的15%,4518年,因此,您可以使用任何你喜欢的评估技术。&#10;食指,中指,无名指,小指和拇指上的五个不同的手指人手.[explanation] " max_attempts="null" rerandomize="never" showanswer="always" weight="null">
+<p>一些课程的问题要求你将数据插入web-text字段,和你的答案可以判断准确或近似问题。</p>
+
+<p>注意edX系统使用一段来表示小数,所以15三个季度"15.75", 不是 "15,75". </p>
+
+<p>输入的Pi数值:</p>
+<numericalresponse answer="3.14159">
+  <responseparam type="tolerance" default=".02"/>
+  <formulaequationinput/>
+</numericalresponse>
+
+<p>输入502 * 9的近似值:</p>
+<numericalresponse answer="4518">
+  <responseparam type="tolerance" default="15%"/>
+  <formulaequationinput/>
+</numericalresponse>
+
+<p>输入的指甲健康的人手。为了这个问题,请考虑拇指手指:</p>
+<numericalresponse answer="5">
+  <formulaequationinput/>
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+<p>Explanation</p>
+
+<p> π,或者是一个圆的周长直径之间的比率,是一个无理数已知极端的精度。它是值约等于3.14。</p>
+<p>尽管你可以得到一个精确值通过输入502 * 9成一个计算器,结果将是近500 * 10,或5000年。年级接受任何响应在真实价值的15%,4518年,因此,您可以使用任何你喜欢的评估技术。</p>
+<p>食指,中指,无名指,小指和拇指上的五个不同的手指人手.</p>
+</div>
+</solution> 
+</problem>

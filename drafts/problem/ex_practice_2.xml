@@ -1,0 +1,11 @@
+<problem display_name="即时反馈" markdown="null" rerandomize="never" showanswer="never">
+  <text>
+    <p>在大多数问题，EDX检查你的答案并为您提供即时反馈。当你点击“检查”的问题，它会自动提交打分。</p>
+    <p>让我们来练习！ （对于很多的以下几个问题，如果你得到一个答案错了，你可以简单地重试，直到你得到它的权利。）</p>
+    <p>多少个小时是在一天？</p>
+    <numericalresponse answer="24">
+      <responseparam type="tolerance" default="0.0001%" name="tol" description="Numerical Tolerance"/>
+      <textline/>
+    </numericalresponse>
+  </text>
+</problem>

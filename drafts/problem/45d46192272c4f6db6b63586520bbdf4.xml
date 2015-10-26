@@ -1,0 +1,20 @@
+<problem display_name="获得答案" markdown="在一些课程“显示答案”按钮，可能会出现以下的问题。当你点击这个按钮，就可以看到正确答案（有解释），将得到满分。&#10;&#10;需要多少费用选修的EDX课程？输入的美元数量。&#10;&#10;= 0 &#10;&#10;[explanation]&#10;它的费用零元拿的EDX课程。所有的EDX课程是免费给学生。&#10;[explanation]&#10;&#10;&#10;&#10;" max_attempts="null" rerandomize="never" showanswer="always" weight="null">
+<p>在一些课程“显示答案”按钮，可能会出现以下的问题。当你点击这个按钮，就可以看到正确答案（有解释），将得到满分。</p>
+
+<p>需要多少费用选修的EDX课程？输入的美元数量。</p>
+
+<numericalresponse answer="0">
+  <formulaequationinput/>
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+<p>Explanation</p>
+
+<p>它的费用零元拿的EDX课程。所有的EDX课程是免费给学生。</p>
+
+</div>
+</solution>
+
+
+</problem>

@@ -1,0 +1,21 @@
+<problem display_name="Molecule Editor" graceperiod="18000 seconds" markdown="null" rerandomize="never" showanswer="attempted" start="&quot;2013-02-05T00:00:00+00:00&quot;" weight="null" xqa_key="qaijS3UatK020Wc0sfCtFe0V6jpB4d64">
+  <p> 多巴胺分子,如图所示,不能让离子键。编辑多巴胺分子可以使离子键。
+    </p>
+  <p>
+        当你准备好了,点击“检查。“如果你需要重新开始,点击
+        "重置.”
+    </p>
+  <script type="loncapa/python">
+def check1(expect, ans):
+    import json
+    mol_info = json.loads(ans)["info"]
+    return any(res == "Can Make Ionic Bonds" for res in mol_info)
+    </script>
+  <customresponse cfn="check1">
+    <editamoleculeinput file="/static/molecules/dopamine.mol">
+        </editamoleculeinput>
+  </customresponse>
+  <solution>
+    <img src="/static/Screen_Shot_2013-04-16_at_1.43.36_PM.png"/>
+  </solution>
+</problem>
